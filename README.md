@@ -6,6 +6,14 @@ Decoding library for Gen 2 RFID tags based on the EPC Tag Data Standard (TDS).  
 __advlib-epc-tds__ is a lightweight [Node.js package](https://www.npmjs.com/package/advlib-epc-tds) that implements the core of the EPC TDS and can be extended with libraries to decode specific EPC schema.
 
 
+Consider instead advlib-epc
+---------------------------
+
+The __advlib-epc-tds__ library fits the [advlib](https://github.com/reelyactive/advlib) paradigm where the entire packet (in the case of RAIN RFID the raw binary data of the memory banks) is available for processing.  _However_, we have yet to identify a reader which provides access to the raw binary data, _hence this library is nothing more than a placeholder._
+
+Consider instead the [advlib-epc](https://github.com/reelyactive/advlib-epc) library which processes the EPC itself, which is provided by most readers, and included in the [RAIN Communication Interface (RCI)](https://rainrfid.org/what-is-rain-rfid/readers/rain-communication-interface-rci/).
+
+
 Contributing
 ------------
 
